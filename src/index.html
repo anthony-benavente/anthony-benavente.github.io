@@ -18,7 +18,7 @@
     <body>
         <nav id="top-nav-bar" class="animated slideInDown">
             <h2 id="site-title">ANTHONY_BENAVENTE</h2>
-            <ul class="right animated slideInRight">
+            <ul class="right animated fadeIn">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -34,7 +34,56 @@
             </ul>
         </nav>
         <div ui-view="main"></div>
-
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Site Links</h3>
+                    <ul class="site-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Media</h3>
+                    <ul class="social-media-links">
+                        <li><a href="http://github.com/anthony-benavente"><i class="fa fa-github"></i> Github</a></li>
+            			<li><a href="https://bitbucket.org/ambenavente1/"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
+            			<li><a href="https://twitter.com/tontwo_670/"><i class="fa fa-twitter"></i> Twitter</a></li>
+            			<li><a href="https://instagram.com/abenavente/"><i class="fa fa-instagram"></i> Instagram</a></li>
+            			<li><a href="https://facebook.com/someuser3321/"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+            			<li><a href="https://linkedin.com/AnthonyBenavente"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <h3>Let me know what you think!</h3>
+                        <div class="fieldgroup">
+                            <input name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="fieldgroup">
+                            <input name="email" type="email" placeholder="Email Address">
+                        </div>
+                        <div class="fieldgroup">
+                            <input name="phone" type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="fieldgroup">
+                            <textarea name="notes" placeholder="Feedback, comments, and questions are welcome!"></textarea>
+                        </div>
+                        <button class="right" type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Copyright &copy; 2013 - <span id="thisYear"></span> Anthony Benavente
+                </div>
+                <div class="col-md-6">
+                    <b>Email: </b> <a href="mailto:anthony.m.benavente@gmail.com">anthony.m.benavente@gmail.com</a>
+                </div>
+            </div>
+        </footer>
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script>
             $(function() {
@@ -42,7 +91,7 @@
                     element = $(element);
                     var text = element.html();
                     element.html('');
-                    for (var i = 0, delay = 1.5; i < text.length; i++, delay += 0.05) {
+                    for (var i = 0, delay = 1; i < text.length; i++, delay += 0.05) {
                         var char = text[i];
                         var toAppend = $('<span>').html(char).hide();
                         if (char === '_' || (i > 0 && text[i-1] === '_')) {
@@ -57,6 +106,8 @@
                 }
 
                 codimate($('#site-title'));
+
+                $('#thisYear').html(new Date().getFullYear());
             });
         </script>
     </body>
