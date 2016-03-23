@@ -18,7 +18,7 @@
     <body>
         <nav id="top-nav-bar" class="animated slideInDown">
             <h2 id="site-title">ANTHONY_BENAVENTE</h2>
-            <ul class="right animated fadeIn">
+            <ul class="right animated fadeIn sm-hide">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -32,6 +32,25 @@
                     <a href="#about">About</a>
                 </li>
             </ul>
+            <div class="sm-show">
+                <div class="hamburger animated fadeIn"><i class="fa fa-bars"></i></div>
+                <div class="responsive-menu">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div ui-view="main"></div>
         <footer class="footer">
@@ -71,7 +90,7 @@
                         <div class="fieldgroup">
                             <textarea name="notes" placeholder="Feedback, comments, and questions are welcome!"></textarea>
                         </div>
-                        <button class="right" type="button">Submit</button>
+                        <button class="sm-left md-right" type="button">Submit</button>
                     </form>
                 </div>
             </div>
@@ -104,6 +123,10 @@
                         );
                     }
                 }
+
+                $( '.hamburger i' ).click(function(){
+        	           $(this).parent().parent().find('.responsive-menu').toggleClass('expanded');
+        	    });
 
                 codimate($('#site-title'));
 

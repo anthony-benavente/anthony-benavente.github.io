@@ -22,12 +22,6 @@
     }
 }
 
-.excited
-{
-    font-size: 20pt;
-    font-weight: 100;
-}
-
 .typeIn
 {
     -webkit-animation: typeIn;
@@ -89,6 +83,15 @@
         max-width: 100%;
         max-height: 90vh;
         margin: -225px 0 0 -331px;
+
+        @media @smallscreens
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+
+            margin: 140px 0;
+        }
     }
 }
 
@@ -160,10 +163,6 @@
     }
 }
 
-.padded
-{
-    padding: 40px;
-}
 #saipan-map
 {
     position: relative;
@@ -218,5 +217,18 @@
     a
     {
         color: #58595b;
+    }
+}
+
+@media @smallscreens
+{
+    .sm-show
+    {
+        display: block;
+    }
+
+    .sm-hide
+    {
+        display: none;
     }
 }
