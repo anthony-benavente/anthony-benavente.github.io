@@ -18,6 +18,9 @@ angular.module( 'agora.about', [
 })
 
 .controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+    $('#top-nav-bar').css('background-color', '#fff');
+    $('#top-nav-bar h2').css('color', '#666');
+    $('#top-nav-bar ul.right li a').css('color', '#428bca');
 })
 
 ;

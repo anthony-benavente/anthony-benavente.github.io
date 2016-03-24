@@ -3,6 +3,7 @@ angular.module( 'agora', [
   'templates-common',
   'agora.home',
   'agora.about',
+  'agora.portfolio',
   'ui.router'
 ])
 

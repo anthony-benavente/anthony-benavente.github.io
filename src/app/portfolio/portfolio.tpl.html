@@ -1,0 +1,217 @@
+<div class="container content">
+    <h2>School Projects</h2>
+    <ul>
+        <li>
+            <h3>Recursive Descent Parser</h3>
+            <p>
+                The goal of the project was to make a full interpreter build off of the grammar described in the section below. 
+                The interpreter should be able to parse and evaluate mathematical expressions.
+            </p>
+            <h4>Backus Naur Form of Grammar</h4>
+            <code>
+                &lt;bexpr&gt; ::= &lt;expr&gt; ;<br>
+                &lt;expr&gt; ::=  &lt;term&gt; &lt;ttail&gt;<br>
+                &lt;ttail&gt; ::=  &lt;add_sub_tok&gt; &lt;term&gt; &lt;ttail&gt; | e<br>
+                &lt;term&gt; ::=  &lt;stmt&gt; &lt;stail&gt;<br>
+                &lt;stail&gt; ::=  &lt;mult_div_tok&gt; &lt;stmt&gt; &lt;stail&gt; | e<br>
+                &lt;stmt&gt; ::=  &lt;factor&gt; &lt;ftail&gt;<br>
+                &lt;ftail&gt; ::=  &lt;compare_tok&gt; &lt;factor&gt; &lt;ftail&gt; | e<br>
+                &lt;factor&gt; ::=  &lt;expp&gt; ^ &lt;factor&gt; | &lt;expp&gt;<br>
+                &lt;expp&gt; ::=  ( &lt;expr&gt; ) | &lt;num&gt;<br>
+                &lt;add_sub_tok&gt; ::=  + | -<br>
+                &lt;mul_div_tok&gt; ::=  * | /
+                &lt;compare_tok&gt; ::=  &lt; | &gt; | &= | &gt;= | ! = | ==<br>
+                &lt;num&gt; ::=  {0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}+<br>
+            </code>
+        </li>
+        <li>
+            <h3>Domain Name Resolver</h3>
+            <p>
+                This project was written in Java and was made in order to learn more about networking as well as the DNS protocol
+                as specified in RFC 1035. The program was command line based but also came with a GUI created in Java Swing. Recently,
+                I ported this over to C which you can <a href="https://github.com/anthony-m-benavente/dnsresolve">find on my GitHub</a>.
+            </p>
+            <div class="albumize" title="nsresolve">
+                <a href="assets/nsresolve-cmd.png" title="nsresolve command line view">
+                    <img src="assets/nsresolve-cmd.png" alt="nsresolve command line view">
+                </a>
+                <a href="assets/nsresolve-gui.png" title="nsresolve gui view">
+                    <img src="assets/nsresolve-gui.png" alt="nsresolve gui view">
+                </a>
+            </div>
+        </li>
+        <li>
+            <h3>Networked Game of S.O.S.</h3>
+            <p>
+                If you aren't familiar with the game of S.O.S., <a href="">here is a link to the rules</a>. This project was a networked,
+                command line version of the game that supported a server where an N amount of players can play.  This project was also
+                written in Java.
+            </p>
+        </li>
+        <li>
+            <h3>Juke Meister</h3>
+            <p>
+                Juke Meister was a year long project for my 2nd year software engineering class. We worked in a team of 4 and went through the
+                entire process following the development lifecycle.  We had 4 milestones in all, where the 4th and final one was implementation.
+                Juke Meister is a touch-compatible juke box software running in Java that uses Java Swing as the GUI. It has two views, the user
+                and the administrator view, where, with a password, administrators can log in to manage the machine. User's had to pay money to 
+                play music, but to emulate that, we attached the coin insert function to keyboard input.
+            </p>
+            <div class="albumize" title="jukemeister">
+                <a href="assets/jukemeister-userview1.png" title="Jukemeister user view">
+                    <img src="assets/jukemeister-userview1.png" alt="Jukemeister user view">
+                </a>
+                <a href="assets/jukemeister-userview2.png" title="Jukemeister user view">
+                    <img src="assets/jukemeister-userview2.png" alt="Jukemeister user view">
+                </a>
+                <a href="assets/jukemeister-adminview.png" title="Jukemeister admin view">
+                    <img src="assets/jukemeister-adminview.png" alt="Jukemeister admin view">
+                </a>
+            </div>
+        </li>
+        <li>
+            <h3>Route Recorder</h3>
+            <p>
+                Route Recorder is an Android application that tracks where the user has traveled while the app is running and traces the 
+                user's route with a line. Route's can be saved and loaded as well as tracking distance travelled. This app is requires
+                GPS or a cell signal for location tracking.
+            </p>
+            <div class="albumize" title="route-recorder">
+                <a href="assets/route-recorder.png" title="Route Recorder splash screen">
+                    <img src="assets/route-recorder.png" alt="Route Recorder splash screen">
+                </a>
+            </div>
+        </li>
+        <li>
+            <h3>Project Index</h3>
+            <p>If you'd like to know more about any of these projects, let me know!</p>
+            <ul>
+                <li>Fall 2013 (Freshman)
+                    <ul>
+                        <li>Introduction to Problem Solving I (CS 150)
+                            <ul>
+                                <li>Project Introducing OOP in Java (Officially named "Vending Machine")</li>
+                                <li>Project Introducing OOP in Java #2 (Officially named "Snowfall")</li>
+                                <li>Expanding on Arrays (Officially named "Olympics")</li>
+                                <li>Multiplayer Checkers in Java Swing (Honors Project)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Spring 2014 (Freshman)
+                    <ul>
+                        <li>Introduction to Problem Solving II (CS 151)
+                            <ul>
+                                <li>A Review on OOP - Monkeys in a Maze</li>
+                                <li>Double Array Sequence</li>
+                                <li>Double Linked Sequence</li>
+                                <li>Word Ladder</li>
+                                <li>Arcade Machine (Honors Project) -- <a href="">You can find the write-up here.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Fall 2014 (Sophomore)
+                    <ul>
+                        <li>Data Structures and Algorithms (CS 351)
+                            <ul>
+                                <li>Database Implemented with Linked Lists</li>
+                                <li>Graphs and Transitive Closure</li>
+                                <li>Heaps and Binary Trees</li>
+                                <li>Binary Tree Visualizer in Java Swing</li>
+                            </ul>
+                        </li>
+                        <li>Software Development (CS 363)
+                            <ul>
+                                <li>Hashing in Databases</li>
+                                <li>HTML Formatted Printer using Tree Traversals</li>
+                            </ul>
+                        </li>
+                        <li>Introduction to Scientific Computing (MATH 340)
+                            <ul>
+                                <li>Exploring Noise - Creating Fractal-Like Structures with Psuedo-Random Noise</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Spring 2015 (Sophomore)
+                    <ul>
+                        <li>Android Applications Development (CS 467)
+                            <ul>
+                                <li>Catamount Letters</li>
+                                <li>Five Card Draw</li>
+                                <li>Paint Meister</li>
+                                <li>Route Recorder</li>
+                            </ul>
+                        </li>
+                        <li>Software Engineering (CS 263)
+                            <ul>
+                                <li>Juke Meister</li>
+                            </ul>
+                        </li>
+                        <li>Organization of Programming Language (Language Theory) (CS 352)
+                            <ul>
+                                <li>Sorting File Contents In C - An Introduction to C</li>
+                                <li>Tokenizer in C</li>
+                                <li>Recursive Descent Parser</li>
+                                <li>File Manipulation in Node.JS (Port of First Project)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Fall 2015 (Junior)
+                    <ul>
+                        <li>Networking (CS 465)
+                            <ul>
+                                <li>Time and Daytime Protocols Implementation in Java</li>
+                                <li>Chargen++ Server + Client in Java using both TCP and UDP</li>
+                                <li>Networked Game of S.O.S. in Java</li>
+                                <li>DNS Resolver (Honors Project)</li>
+                            </ul>
+                        </li>
+                        <li>Computer Graphics (CS 361)
+                            <ul>
+                                <li>2-D Stained Glass Window with Three.JS and WebGL</li>
+                                <li>Playable Game with Unity</li>
+                                <li>3-D Animated Turnstile with Three.JS and WebGL</li>
+                                <li>World-gen (<a href="http://agora.cs.wcu.edu/~ambenavente1/worldgen/worldgen.html">Link</a>)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Spring 2016 (Junior)
+                    <ul>
+                        <li>Operating Systems (CS 370)
+                            <ul>
+                                <li>Shell from Scratch in C</li>
+                                <li>Racing Sorts - Multi-threaded program to compare different sorting algorithms (Honors Project)</li>
+                                <li>More to come...</li>
+                            </ul>
+                        </li>
+                        <li>Databases (CS 465)
+                            <ul>
+                                <li>Relational Algebra Assignment (on paper??)</li>
+                                <li>Using PLSQL</li>
+                                <li>Exploring Subqueries and Optimization in PLSQL</li>
+                                <li>More to come...</li>
+                            </ul>
+                        </li>
+                        <li>Computer Organization / MIPS (CS 350)
+                            <ul>
+                                <li>Introduction to MIPS - First Assembly Program</li>   
+                                <li>Spaced Insertion Sort in Assembly</li>
+                                <li>Intel 8080 Emulator (<a href="">Link</a>) - Honors Project</li>
+                                <li>More to come...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul> 
+        </li>
+    </ul>
+</div>

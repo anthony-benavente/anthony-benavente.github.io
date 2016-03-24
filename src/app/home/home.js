@@ -39,13 +39,17 @@ angular.module( 'agora.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', function HomeController( $scope ) {
-    $('#keepGoing').click(function() {
-        var target = $('#about-cnmi');
-        $('html, body')
-            .animate({
-                scrollTop: $(target).offset().top
-            }, 'slow', 'swing', function() {});
-    });
+    $('#top-nav-bar').css('background-color', 'rgba(0, 0, 0, 0.3)');
+    $('#top-nav-bar h2').css('color', '#fff');
+    $('#top-nav-bar ul.right li a').css('color', '#fff');
+    
+    // $('#keepGoing').click(function() {
+    //     var target = $('#about-cnmi');
+    //     $('html, body')
+    //         .animate({
+    //             scrollTop: $(target).offset().top
+    //         }, 'slow', 'swing', function() {});
+    // });
 })
 
 ;
