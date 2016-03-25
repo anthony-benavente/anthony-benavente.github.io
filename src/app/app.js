@@ -4,6 +4,7 @@ angular.module( 'agora', [
   'agora.home',
   'agora.about',
   'agora.portfolio',
+  'agora.resume',
   'ui.router'
 ])
 
