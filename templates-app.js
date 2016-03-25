@@ -4,6 +4,39 @@ angular.module("about/about.tpl.html", []).run(["$templateCache", function($temp
   $templateCache.put("about/about.tpl.html",
     "<div class=\"container content\">\n" +
     "    <h1>About Me</h1>\n" +
+    "    <p>\n" +
+    "    Hello, everyone! My name is Anthony Benavente. I was born on April 6,\n" +
+    "    1995 on the island of Saipan, the capital of the <a\n" +
+    "    href=\"http://en.wikipedia.org/wiki/Northern_Mariana_Islands\">\n" +
+    "    Northern Mariana Islands</a> which is a territory of the United States.\n" +
+    "    When I was only ten years old, my family and I moved across the pond to\n" +
+    "    Raleigh, North Carolina, so that my parents could obtain their masters\n" +
+    "    from North Carolina State University.  All my life, I thought I was going\n" +
+    "    to follow my parents' footsteps and attend North Carolina State as well to\n" +
+    "    become an architect.  However, after taking a semester of art at Green\n" +
+    "    Hope High School, Cary, North Carolina, I quickly realized that the dream\n" +
+    "    of becoming an architect was impossible. I then adjusted my sights when I\n" +
+    "    had recieved my first laptop as a gift from my grandmother (<a\n" +
+    "    href=\"http://reviews.us.samsung.com/7463/NP-RV511-A01US/samsung-rv511-a01-notebook-reviews/reviews.htm\">\n" +
+    "    this was my first laptop for those curious</a>) and\n" +
+    "    decided to dabble in the world of programming and computer science.  Here\n" +
+    "    is where I found my niche, my calling, my future.\n" +
+    "    </p>\n" +
+    "\n" +
+    "    <p>\n" +
+    "        Today, I am attending Western Carolina University studying Computer Science and Applied Mathematics. I\n" +
+    "        plan on graduating with my undergraduate degree in 2017 after which I\n" +
+    "        will continue on in life, fufilling my dream of working in the industry\n" +
+    "        as a computer programmer.  However, one of my future goals in life is\n" +
+    "        to obtain my Master's degree, PhD. and become a professor at a\n" +
+    "        university.  So thanks for reading about my story, and\n" +
+    "        if you'd like to contact me, fill out the form at the bottom of this page.  \n" +
+    "        I appreciate your time, and I can't wait to hear from you!\n" +
+    "    </p>\n" +
+    "    <br>\n" +
+    "    <p>\n" +
+    "        Thanks,<p></p>Anthony Benavente\n" +
+    "    </p>\n" +
     "</div>\n" +
     "");
 }]);
