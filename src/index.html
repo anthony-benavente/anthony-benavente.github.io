@@ -83,21 +83,22 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <form class="contact-form">
+                    <form class="contact-form" method="POST" action="https://formspree.io/anthony.m.benavente@gmail.com">
                         <h3>Let me know what you think!</h3>
+                        <input type="text" name="_gotcha" style="display:none" />
                         <div class="fieldgroup">
-                            <input name="name" type="text" placeholder="Name">
+                            <input name="name" type="text" placeholder="Your Name" required>
                         </div>
                         <div class="fieldgroup">
-                            <input name="email" type="email" placeholder="Email Address">
+                            <input name="email" type="email" placeholder="Your Email Address">
                         </div>
                         <div class="fieldgroup">
-                            <input name="phone" type="tel" placeholder="Phone Number">
+                            <input name="phone" type="tel" placeholder="Your Phone Number">
                         </div>
                         <div class="fieldgroup">
-                            <textarea name="notes" placeholder="Feedback, comments, and questions are welcome!"></textarea>
+                            <textarea name="notes" placeholder="Feedback, comments, and questions are welcome!" required></textarea>
                         </div>
-                        <button class="sm-left md-right" type="button">Submit</button>
+                        <button class="sm-left md-right" type="button" id="contact-submit">Submit</button>
                     </form>
                 </div>
             </div>
