@@ -13,7 +13,7 @@ angular.module( 'agora.resume', [
         templateUrl: 'resume/resume.tpl.html'
       }
     },
-    data:{ pageTitle: 'Benavente - Resume' }
+    data:{ pageTitle: 'Resume' }
   });
 })
 
