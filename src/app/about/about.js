@@ -13,7 +13,7 @@ angular.module( 'agora.about', [
         templateUrl: 'about/about.tpl.html'
       }
     },
-    data:{ pageTitle: 'Benavente - About' }
+    data:{ pageTitle: 'About' }
   });
 })
 
