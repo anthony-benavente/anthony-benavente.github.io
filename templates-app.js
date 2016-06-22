@@ -127,7 +127,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "		<ul id=\"social-media-list\">\n" +
     "			<li><a class=\"excited\" href=\"http://github.com/anthony-benavente\"><i class=\"fa fa-github\"></i> anthony-benavente</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://bitbucket.org/ambenavente1/\"><i class=\"fa fa-bitbucket\"></i> ambenavente1</a></li>\n" +
-    "			<li><a class=\"excited\" href=\"https://twitter.com/benaventay\"><i class=\"fa fa-twitter\"></i> @benaventay</a></li>\n" +
+    "			<li><a class=\"excited\" href=\"https://twitter.com/abenavente_\"><i class=\"fa fa-twitter\"></i> @abenavente_</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.instagram.com/abenavente406/\"><i class=\"fa fa-instagram\"></i>@abenavente406</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.facebook.com/anthony.benavente.754\"><i class=\"fa fa-facebook-square\"></i> Facebook</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.linkedin.com/in/anthony-benavente-a5101196\"><i class=\"fa fa-linkedin-square\"></i> LinkedIn</a></li>\n" +
