@@ -1,0 +1,370 @@
+/**
+ * This is the main application stylesheet. It should include or import all
+ * stylesheets used throughout the application as this is the only stylesheet in
+ * the Grunt configuration that is automatically processed.
+ */
+
+
+/**
+ * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+ * project should be imported as the rest are just wasting space.
+ */
+
+@import '../../vendor/bootstrap/less/bootstrap.less';
+
+
+/**
+ * This is our main variables file. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+
+@import 'variables.less';
+
+@smallscreens: ~'only screen and (max-width: 640px)';
+
+@smartphones: ~'only screen and (max-width: 414px)';
+
+
+/**
+ * Typography
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro);
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+code,
+pre,
+.pre
+{
+    margin: 10px 0;
+    padding: 5px;
+
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    background-color: #efefef;
+}
+
+code
+{
+    padding: 0 3px;
+}
+
+pre
+{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.sm-hide {
+    display: block;
+    @media @smartphones {
+        display: none;
+    }
+}
+
+.sm-show {
+    display: none;
+    @media @smartphones {
+        display: block;
+    }
+}
+
+.center
+{
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.page-header
+{
+    margin-top: 60px;
+
+    &:first-child
+    {
+        margin-top: 20px;
+    }
+}
+
+h2
+{
+    margin: 20px 0;
+
+    color: #666;
+}
+
+.full-screen
+{
+    max-width: 100%;
+    min-height: 100vh;
+
+    @media @smartphones {
+        min-height: 0;
+    }
+}
+
+.overlay
+{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/**
+ * Navigation
+ */
+.navbar
+{
+    margin-top: 20px;
+
+    small
+    {
+        font-size: 60%;
+    }
+}
+
+.right
+{
+    float: right;
+}
+
+.padded
+{
+    padding: 40px;
+
+    @media @smartphones {
+        padding: 0;
+    }
+}
+
+.sm-left {
+    @media @smartphones {
+        float: left;
+    }
+}
+
+.md-right {
+    @media screen and only (max-width: 414px) {
+        float: right;
+    }
+}
+
+.excited
+{
+    font-size: 20pt;
+    font-weight: 100;
+
+    @media @smartphones {
+        font-size: 15pt;
+    }
+}
+#top-nav-bar
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    min-height: 46px;
+
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .34);
+    background-color: rgba(0, 0, 0, .3);
+
+    @media @smallscreens {
+        min-height: 150px;
+        text-align: center;
+    }
+
+    h2
+    {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: light;
+
+        position: absolute;
+        bottom: -14px;
+        left: 20px;
+
+        color: white;
+
+        @media @smallscreens {
+            position: relative;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    ul.right
+    {
+        margin-top: 14px;
+
+        list-style-type: none;
+
+        -webkit-animation-delay: 2.3s;
+                animation-delay: 2.3s;
+
+        li
+        {
+            display: inline-block;
+
+            margin: 0 20px;
+
+            a
+            {
+                color: white;
+            }
+        }
+
+        @media @smallscreens {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        -webkit-animation-delay: 2.3s;
+                animation-delay: 2.3s;
+        font-size: 18pt;
+        color: white;
+
+        i
+        {
+            cursor: hand;
+            cursor: pointer;
+
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 50% 50%;
+        }
+    }
+
+    .responsive-menu {
+        display: none;
+        text-align: center;
+
+        &.expanded {
+            display: block !important;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+
+            li {
+                margin: 15px 0;
+                a {
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * Footer
+ */
+
+footer
+{
+    min-height: 180px;
+    padding: 20px 40px;
+
+    color: #ccc;
+    background-image: url(dark_Tire.png);
+
+    h3
+    {
+        font-weight: 100;
+
+        letter-spacing: 2px;
+
+        text-tranform: uppercase;
+    }
+
+    ul
+    {
+        list-style-type: none;
+
+        li
+        {
+            margin: 10px 0;
+
+            font-size: 15px;
+
+            a {
+                color: #ccc;
+
+                &:visited,
+                &:active,
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+.contact-form
+{
+    input,
+    textarea
+    {
+        width: 100%;
+        margin: 10px 0;
+
+        color: #333;
+        border: 0;
+        outline: none;
+        background-color: white;
+
+        padding: 5px;
+    }
+
+    input
+    {
+        height: 45px;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    button {
+        width: 170px;
+        height: 48px;
+        background-color: #592c88;
+        border: 0;
+        outline: 0;
+    }
+}
+
+/**
+ * Now that all app-wide styles have been applied, we can load the styles for
+ * all the submodules and components we are using.
+ *
+ * TODO: In a later version of this boilerplate, I'd like to automate this.
+ */
+
+@import '../app/home/home.less';
+@import '../app/portfolio/portfolio.less';

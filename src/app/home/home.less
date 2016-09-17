@@ -1,0 +1,246 @@
+@-webkit-keyframes typeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes typeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.typeIn
+{
+    -webkit-animation: typeIn;
+            animation: typeIn;
+    -webkit-animation-duration: .01s;
+            animation-duration: .01s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+
+    opacity: 0;
+
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.patriotic-image
+{
+    position: relative;
+
+    text-align: center;
+    img
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-animation-delay: .5s;
+                animation-delay: .5s;
+    }
+
+    .overlay
+    {
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
+
+        background: rgba(0, 0, 0, .5);
+    }
+
+    h2
+    {
+        z-index: 2;
+
+        margin: 0;
+        padding: 0;
+
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
+
+        color: white;
+    }
+}
+
+#cnmi
+{
+    background-color: #295598;
+
+    img
+    {
+        max-width: 100%;
+        max-height: 90vh;
+        margin: -225px 0 0 -331px;
+
+        @media @smallscreens
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+
+            margin: 140px 0;
+        }
+    }
+}
+
+#wcu
+{
+    text-align: center;
+
+    img
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        height: 100vh;
+    }
+}
+
+#nc
+{
+    position: relative;
+
+    min-height: 50vh;
+
+    text-align: left;
+
+    color: #fff;
+    background-color: #fff;
+    background-image: url(http://new-admpros.herokuapp.com/img/Raleigh.jpeg);
+    background-size: cover;
+
+    .overlay
+    {
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    div
+    {
+        padding: 40px;
+
+        @media @smallscreens
+        {
+            padding: 10px 20px;
+        }
+    }
+}
+
+#wcu
+{
+    background-color: #592c88;
+}
+
+#social-media-col
+{
+    padding-top: 10px;
+
+    #social-media-list
+    {
+        list-style-type: none;
+
+        li
+        {
+            margin: 20px 0;
+
+            i
+            {
+                width: 40px;
+            }
+        }
+    }
+}
+
+#saipan-map
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 0;
+    padding-bottom: 33.33333%; // This is the aspect ratio
+
+    @media @smallscreens
+    {
+        padding-bottom: 60%;
+    }
+
+    iframe
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+#keepGoing
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding-bottom: 20px;
+
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+
+    // background-color: rgba(0, 0, 0, .5);
+
+    h1
+    {
+        cursor: hand;
+        cursor: pointer;
+        -webkit-animation-delay: 3.5s;
+                animation-delay: 3.5s;
+
+        color: white;
+    }
+    
+}
+
+#social-list {
+    li {
+        display: inline;
+        
+        a {
+            padding: 0 10px;
+            color: white;
+        }
+    }
+}
+    
+#social-media-list
+{
+    a
+    {
+        color: #58595b;
+    }
+}
+
+@media @smallscreens
+{
+    .sm-show
+    {
+        display: block;
+    }
+
+    .sm-hide
+    {
+        display: none;
+    }
+}
