@@ -49,9 +49,9 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "		<ul id=\"social-list\">\n" +
     "			<li><a class=\"excited\" href=\"http://github.com/anthony-benavente\"><i class=\"fa fa-github\"></i></a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://bitbucket.org/ambenavente1/\"><i class=\"fa fa-bitbucket\"></i></a></li>\n" +
-    "			<li><a class=\"excited\" href=\"https://twitter.com/benaventay\"><i class=\"fa fa-twitter\"></i></a></li>\n" +
-    "			<li><a class=\"excited\" href=\"https://www.instagram.com/abenavente406/\"><i class=\"fa fa-instagram\"></i></a></li>\n" +
-    "			<li><a class=\"excited\" href=\"https://www.facebook.com/anthony.benavente.754\"><i class=\"fa fa-facebook-square\"></i></a></li>\n" +
+    "			<li><a class=\"excited\" href=\"https://twitter.com/dabenavente\"><i class=\"fa fa-twitter\"></i></a></li>\n" +
+    "			<li><a class=\"excited\" href=\"https://www.instagram.com/abenavente/\"><i class=\"fa fa-instagram\"></i></a></li>\n" +
+    "			<li><a class=\"excited\" href=\"https://fb.me/anthony.benavente.me\"><i class=\"fa fa-facebook-square\"></i></a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.linkedin.com/in/anthony-benavente-a5101196\"><i class=\"fa fa-linkedin-square\"></i></a></li>\n" +
     "        </ul>\n" +
     "        <!--<h1 class=\"center animated shake\">What is this image? (Click)<br><i class=\"fa fa-angle-double-down\"></i></h1>-->\n" +
@@ -105,7 +105,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "		<div class=\"col-md-12\">\n" +
     "			<h1>Hard Worker.</h1>\n" +
     "			<p class=\"excited\">\n" +
-    "				I've been working at AdmissionPros LLC. for 3 years.\n" +
+    "				I've been an intern at AdmissionPros LLC. for 3 years in a row. I also did research at NCSU over the summer of 2016.\n" +
     "			</p>\n" +
     "			<blockquote>\n" +
     "				See what I've done while working <a href=\"#portfolio\">here</a>.\n" +
@@ -114,7 +114,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "		<div class=\"col-md-12\">\n" +
     "			<h1>Student.</h1>\n" +
     "			<p class=\"excited\">\n" +
-    "				As a Junior at Western Carolina University, I've made many projects\n" +
+    "				As a Senior at <a href=\"http://wcu.edu\">Western Carolina University</a>, I've made many projects\n" +
     "				including Android Apps, a basic (not <samp>BASIC</samp>) interpretter,\n" +
     "				as well as a data-persistent juke box programmed with Java.\n" +
     "			</p>\n" +
@@ -127,7 +127,7 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
     "		<ul id=\"social-media-list\">\n" +
     "			<li><a class=\"excited\" href=\"http://github.com/anthony-benavente\"><i class=\"fa fa-github\"></i> anthony-benavente</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://bitbucket.org/ambenavente1/\"><i class=\"fa fa-bitbucket\"></i> ambenavente1</a></li>\n" +
-    "			<li><a class=\"excited\" href=\"https://twitter.com/abenavente_\"><i class=\"fa fa-twitter\"></i> @abenavente_</a></li>\n" +
+    "			<li><a class=\"excited\" href=\"https://twitter.com/dabenavente\"><i class=\"fa fa-twitter\"></i> @dabenavente</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.instagram.com/abenavente406/\"><i class=\"fa fa-instagram\"></i>@abenavente406</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.facebook.com/anthony.benavente.754\"><i class=\"fa fa-facebook-square\"></i> Facebook</a></li>\n" +
     "			<li><a class=\"excited\" href=\"https://www.linkedin.com/in/anthony-benavente-a5101196\"><i class=\"fa fa-linkedin-square\"></i> LinkedIn</a></li>\n" +
@@ -140,6 +140,21 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
 angular.module("portfolio/portfolio.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("portfolio/portfolio.tpl.html",
     "<div class=\"container content\">\n" +
+    "    <h2>Research Projects</h2>\n" +
+    "    <ul>\n" +
+    "        <li>\n" +
+    "            <h3><b>Excel-lent Research:</b> Understaning Spreadsheet Use, Creation, and Maintenance at ABB</h3>\n" +
+    "            <p>\n" +
+    "                Over the summer of 2016, I attended an REU at NC State University. Over the summer, we partnered\n" +
+    "                up with a company, ABB, to conduct a pre-study about addressing the issue with spreadsheets in\n" +
+    "                the company. <a href=\"assets/nscu-poster.pdf\">You can download the poster here.</a>\n" +
+    "            </p>\n" +
+    "            <object data=\"assets/ncsu-poster.pdf\" type=\"application/pdf\" width=\"100%\" height=\"550px\">\n" +
+    "                <p>Alternative text <a href=\"assets/ncsu-poster.pdf\">to the PDF!</a></p>\n" +
+    "            </object>\n" +
+    "        </li>\n" +
+    "    </ul>\n" +
+    "\n" +
     "    <h2>School Projects</h2>\n" +
     "    <ul>\n" +
     "        <li>\n" +
@@ -361,7 +376,7 @@ angular.module("portfolio/portfolio.tpl.html", []).run(["$templateCache", functi
 angular.module("resume/resume.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("resume/resume.tpl.html",
     "<div class=\"container content\">\n" +
-    "    <iframe src=\"https://drive.google.com/file/d/0B6GDYlMCIMkkdld2UFc2NDR1NkU/preview\" style=\"margin: 0 auto; width:100%; height:700px;\" frameborder=\"1\"></iframe>\n" +
+    "    <iframe src=\"https://drive.google.com/file/d/0B6GDYlMCIMkkdld2UFc2NDR1NkU/preview\" style=\"margin: 0 auto; width:100%; height:900px;\" frameborder=\"1\"></iframe>\n" +
     "</div>\n" +
     "");
 }]);
