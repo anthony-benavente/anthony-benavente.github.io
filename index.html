@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="agora" ng-controller="AppCtrl" lang="en">
+    <head>
+        <title ng-bind="pageTitle">Anthony Benavente</title>
+        
+        <meta name="og:title" content="Anthony Benavente's Portfolio">
+        <meta name="og:image" content="assets/cnmi-thumb.png">
+        <meta name="og:description" content="Come learn more about what I program - Anthony Benavente">
+        <meta name="og:url" content="http://benavente.me">
+        <meta name="keywords" content="anthony benavente portfolio GitHub">
+        <meta name="description" content="It seems you found me. Come check out my website for more information about me, Anthony Benavente.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendor/albumize-master/css/albumize.css" rel="stylesheet">
+
+        <!-- compiled CSS -->
+        <link rel="stylesheet" type="text/css" href="vendor/animate.css/animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/angular-agora-0.0.1.css" />
+
+        <!-- compiled JavaScript -->
+        <script type="text/javascript" src="vendor/angular/angular.js"></script>
+        <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+        <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="src/app/about/about.js"></script>
+        <script type="text/javascript" src="src/app/app.js"></script>
+        <script type="text/javascript" src="src/app/home/home.js"></script>
+        <script type="text/javascript" src="src/app/portfolio/portfolio.js"></script>
+        <script type="text/javascript" src="src/app/resume/resume.js"></script>
+        <script type="text/javascript" src="src/common/plusOne/plusOne.js"></script>
+        <script type="text/javascript" src="templates-common.js"></script>
+        <script type="text/javascript" src="templates-app.js"></script>
+    </head>
+    <body>
+        <nav id="top-nav-bar" class="animated slideInDown">
+            <h2 id="site-title">ANTHONY_BENAVENTE</h2>
+            <ul class="right animated fadeIn sm-hide">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+            <div class="sm-show">
+                <div class="hamburger animated fadeIn"><i class="fa fa-bars"></i></div>
+                <div class="responsive-menu">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div ui-view="main"></div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Site Links</h3>
+                    <ul class="site-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Media</h3>
+                    <ul class="social-media-links">
+                        <li><a href="http://github.com/anthony-benavente"><i class="fa fa-github"></i> Github</a></li>
+            			<li><a href="https://bitbucket.org/ambenavente1/"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
+            			<li><a href="https://twitter.com/tontwo_670/"><i class="fa fa-twitter"></i> Twitter</a></li>
+            			<li><a href="https://instagram.com/abenavente/"><i class="fa fa-instagram"></i> Instagram</a></li>
+            			<li><a href="https://facebook.com/someuser3321/"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+            			<li><a href="https://linkedin.com/AnthonyBenavente"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form" method="POST" action="https://formspree.io/anthony.m.benavente@gmail.com">
+                        <h3>Let me know what you think!</h3>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="fieldgroup">
+                            <input name="name" type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="fieldgroup">
+                            <input name="email" type="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="fieldgroup">
+                            <input name="phone" type="tel" placeholder="Your Phone Number">
+                        </div>
+                        <div class="fieldgroup">
+                            <textarea name="notes" placeholder="Feedback, comments, and questions are welcome!" required></textarea>
+                        </div>
+                        <button class="sm-left md-right" type="submit" id="contact-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Copyright &copy; 2013 - <span id="thisYear"></span> Anthony Benavente
+                </div>
+                <div class="col-md-6">
+                    <b>Email: </b> <a href="mailto:anthony.m.benavente@gmail.com">anthony.m.benavente@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <!-- least.js 2 library -->
+        <script src="vendor/albumize-master/js/albumize.js"></script>
+        <script>
+            $(function() {
+                function codimate(element) {
+                    element = $(element);
+                    var text = element.html();
+                    element.html('');
+                    for (var i = 0, delay = 1; i < text.length; i++, delay += 0.05) {
+                        var char = text[i];
+                        var toAppend = $('<span>').html(char).hide();
+                        if (char === '_' || (i > 0 && text[i-1] === '_')) {
+                            delay += 0.25;
+                        }
+                        element.append(
+                            toAppend.addClass('typeIn')
+                                    .attr('style', 'animation-delay: ' + delay +
+                                          's;-webkit-animation-delay:' + delay + 's')
+                        );
+                    }
+                }
+
+                $( '.hamburger i' ).click(function(){
+        	           $(this).parent().parent().find('.responsive-menu').toggleClass('expanded');
+        	    });
+
+                codimate($('#site-title'));
+
+                $('#thisYear').html(new Date().getFullYear());
+            });
+        </script>
+    </body>
+</html>
